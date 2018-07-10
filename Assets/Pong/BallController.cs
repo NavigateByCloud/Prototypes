@@ -35,7 +35,6 @@ public class BallController : MonoBehaviour {
 
 	public void Shot(){
 		transform.parent = transform.parent.parent;
-		//Debug.Log("set parent again"+transform.parent.name);
 		rb.velocity = dir*10f;
 		isBouncing = true;
 	}
