@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: cc877c9b4165a4601871761fb458ecf0
+timeCreated: 1525651225
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: MindEscape
+  fontNames:
+  - MindEscape
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

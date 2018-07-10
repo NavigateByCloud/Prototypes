@@ -1,0 +1,127 @@
+title: Ship
+tags: 
+colorID: 0
+position: 721,130
+---
+<<if visited("Ship") is false>>
+	<<setsprite ShipFace neutral>>
+    Ship: R001, activate human learning function.
+    R001: Human learning function has been activated.
+    R001: Now input the name.
+    Ship: Robort.
+    R001: My name is Robort.
+    <<setsprite ShipFace happy>>
+        Ship: Begin human learning task.
+        R001: Task received.
+    <<setsprite ShipFace neutral>>
+<<else>>
+	<<if $talk_to_hatman is false>>
+	 	Ship: Begin human learning task.
+        R001: Task received.
+    <<else>>
+        Ship: Are you going to take the test? 
+        [[Yes.|Ship.Test]]
+        [[No.|Ship.Exit]]
+    <<endif>>
+<<endif>>
+
+===
+
+title: Ship.Exit
+tags: 
+colorID: 1
+position: 212,418
+---
+Ship: Bye.
+<<setsprite ShipFace neutral>>
+
+===
+
+title: Ship.Test
+tags: 
+colorID: 1
+position: 212,418
+---
+Ship: Test begins.
+<<setsprite ShipFace happy>>
+Ship: Hey, I'm Ship. What's your name?
+[[I'm Robert.|Ship.Test2]]
+[[What a straight question it is!|Ship.Test1]]
+[[No one cares about true name these days.|Ship.Test1]]
+[[It's werid to be asked about that. I think the answer is not bad.|Ship.Test5]]
+
+===
+
+title: Ship.Test1
+tags: 
+colorID: 10
+position: 212,418
+---
+Ship:...
+R001:...
+Ship: Test failed.
+
+===
+
+title: Ship.Test2
+tags: 
+colorID: 11
+position: 212,418
+---
+
+Ship: How are you, Robert?
+[[What a straight question it is!|Ship.Test1]]
+[[I guess the conversion ends. Bye.|Ship.Test1]]
+[[It's werid to be asked about that. I think the answer is not bad.|Ship.Test3]]
+
+
+===
+
+title: Ship.Test5
+tags: 
+colorID: 12
+position: 212,418
+---
+
+Ship: How are you, Notbad?
+[[What a straight question it is!|Ship.Test1]]
+[[I guess the conversion ends. Bye.|Ship.Test1]]
+[[It's werid to be asked about that. I think the answer is not bad.|Ship.Test3]]
+
+
+===
+
+title: Ship.Test3
+tags: 
+colorID: 13
+position: 212,418
+---
+Ship: Oh, what happened?
+[[What a straight question it is!|Ship.Test1]]
+[[No one cares about true name these days.|Ship.Test4]]
+[[It's werid to be asked about that. I think the answer is not bad.|Ship.Test1]]
+[[It's werid that we both remember each other's name.|Ship.Test4]]
+
+===
+
+title: Ship.Test4
+tags: 
+colorID: 1
+position: 212,418
+---
+Ship: I‘m sorry to hear that.
+[[I'm Robert.|Ship.Test1]]
+[[I guess the conversion ends. Bye.|Ship.Pass]]
+[[It's werid to be asked about that. I think the answer is not bad.|Ship.Test1]]
+[[It's werid that we both remember each other's name.|Ship.Test1]]
+
+===
+
+title: Ship.Pass
+tags: 
+colorID: 14
+position: 212,418
+---
+Ship: Bye.
+Ship: ...
+Ship: Test passed!

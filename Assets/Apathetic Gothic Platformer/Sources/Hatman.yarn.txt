@@ -1,0 +1,51 @@
+title: Hatman
+tags: 
+colorID: 0
+position: 524,111
+---
+<<if visited("Ship") is false>>
+	<<if visited("Hatman") is false>>
+	    Hatman: Oh! Hi.
+	    R001: ...
+	    Hatman: Wierd boy.
+    <<else>>
+	    Hatman: Hi wierd boy, what's up?
+	<<endif>>
+<<else>>    
+     <<if $talk_to_hatman is false>>
+     	R001: Hey, I'm Robert.
+	    Hatman: Oh, Hi. 
+	    <<if visited("Hatman") is false>>
+		    Hatman: Oh! Hi. 
+	    <<else>>
+		    Hatman: Hi wierd boy, what's up?
+		<<endif>>
+		R001:...
+		Hatman:...
+		R001: What's your name?
+	    Hatman: What a straight question it is!
+	    R001:... 
+	    Hatman: They called me hatman. 
+	    Hatman: No one cares about true name these days. 
+	    R001: How are you, hatman?
+	    Hatman: It's werid to be asked about that. I think the answer is not bad.
+	    R001: ...
+	    Hatman: I guess the conversion ends. Bye.
+	    R001: Bye.
+	    <<set $talk_to_hatman to true>>
+    <<else>>
+    	Hatman: Hi, Robert.
+    	R001: Hi, Hatman.
+	    Hatman: It's werid that we both remember each other's name.
+	    R001: How are you?
+	    Hatman: Good.
+	    R001:...
+	    Hatman: Bye
+	    R001:...
+	<<endif>>
+
+    
+<<endif>>
+
+
+
