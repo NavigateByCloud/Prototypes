@@ -3,7 +3,7 @@ Here is prototypes that I developed for every week's prototype studio when I was
 
 The prompt and the final games are:
 
-A prototype in you head but never begin: https://vanillabreeze.itch.io/travelagencysim2
+A prototype in your head but never begin: https://vanillabreeze.itch.io/travelagencysim2
 
 Animal using tools: https://vanillabreeze.itch.io/tetrisescape
 
