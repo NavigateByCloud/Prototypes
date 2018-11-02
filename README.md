@@ -2,6 +2,7 @@
 Here is prototypes that I developed for every week's prototype studio when I was at NYU Game Center
 
 The prompt and the final games are:
+
 A prototype in you head but never begin: https://vanillabreeze.itch.io/travelagencysim2
 
 Animal using tools: https://vanillabreeze.itch.io/tetrisescape
